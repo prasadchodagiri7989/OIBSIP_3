@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div>
+        <div>
+            <h1>Temperature Converter</h1>
+            <div>
+                <div>
+                    <p>From</p>
+                    <div class="select">
+                    <select name="drop1" id="drop1"  onclick="show()">
+                        <option selected disabled value="choose">Choose</option>
+                        <option value="celsius"><span class="option">Celsius</span></option>
+                        <option value="fahreinheit"><span class="option">Fahreinheit</span></option>
+                    </select>
+                    </div>
+                </div>
+                <div>
+                    <p>To</p>
+                    <div class="select">
+                        <select name="drop2" id="drop2">
+                        <option selected disabled>Choose</option>
+                        </select>
+                    </div>
+                </div>
+                <p>Enter Temperature</p>
+                <input type="number" class="select temp-input" id="temperature">
+                <div class="btn">
+                <button class="convert-btn" onclick="convert()">Convert</button>
+                </div>
+                <p></p>
+                    <input class="select temp-input" type="text" id="temptext" readonly>
+            </div>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
